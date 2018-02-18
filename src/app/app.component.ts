@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
-  
+  showAdmin
   
    foods = [
     {value: 'User-0', viewValue: 'User'},
@@ -20,6 +20,11 @@ export class AppComponent {
   
 callType(value){
   console.log(value)
+  if(value == 'Admin-1'){
+    this.showAdmin = true;
+  }else{
+    this.showAdmin = false;
+  }
 }
 
 openDialog() {

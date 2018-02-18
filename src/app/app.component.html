@@ -27,7 +27,7 @@
 <div class="container" style="    padding-top: 38px;">
   <mat-card>Simple card
 
-      <div class="button-row">
+      <div class="button-row" *ngIf="showAdmin">
           
           <button mat-raised-button color="primary"  data-toggle="modal" data-target="#exampleModal">Edit</button>
           
@@ -47,7 +47,7 @@
           </button>
         </div>
         <div class="modal-body">
-          ...
+          body
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
